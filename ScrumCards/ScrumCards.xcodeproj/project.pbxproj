@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60F8762220295AA000CFEDA8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */; };
 		D8872EA020265EE300FAA315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8872E9F20265EE300FAA315 /* AppDelegate.swift */; };
 		D8872EA220265EE300FAA315 /* PokerEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8872EA120265EE300FAA315 /* PokerEstimationViewController.swift */; };
 		D8872EA420265EE300FAA315 /* FibonacciEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8872EA320265EE300FAA315 /* FibonacciEstimationViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D8872E9C20265EE300FAA315 /* ScrumCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8872E9F20265EE300FAA315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8872EA120265EE300FAA315 /* PokerEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerEstimationViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60F8762020295A5700CFEDA8 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		60F87623202963DE00CFEDA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8872EC12026615400FAA315 /* PokerView */,
+				D8872EC22026619300FAA315 /* FibonacciView */,
+				D8872EC3202661A300FAA315 /* TShirtView */,
+				D8872EC4202661AC00FAA315 /* About */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		60F87624202963F400CFEDA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60F876252029640900CFEDA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60F8762020295A5700CFEDA8 /* CollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D8872E9320265EE300FAA315 = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +119,9 @@
 		D8872E9E20265EE300FAA315 /* ScrumCards */ = {
 			isa = PBXGroup;
 			children = (
-				D8872EC12026615400FAA315 /* PokerView */,
-				D8872EC22026619300FAA315 /* FibonacciView */,
-				D8872EC3202661A300FAA315 /* TShirtView */,
-				D8872EC4202661AC00FAA315 /* About */,
+				60F87623202963DE00CFEDA8 /* Controllers */,
+				60F87624202963F400CFEDA8 /* ViewModel */,
+				60F876252029640900CFEDA8 /* Views */,
 				D8872E9F20265EE300FAA315 /* AppDelegate.swift */,
 				D8872EA520265EE300FAA315 /* Main.storyboard */,
 				D8872EA820265EE300FAA315 /* Assets.xcassets */,
@@ -242,6 +277,7 @@
 			files = (
 				D8872EA420265EE300FAA315 /* FibonacciEstimationViewController.swift in Sources */,
 				D8872EC62026621B00FAA315 /* TShirtEstimationViewController.swift in Sources */,
+				60F8762220295AA000CFEDA8 /* CollectionViewCell.swift in Sources */,
 				D8872EA020265EE300FAA315 /* AppDelegate.swift in Sources */,
 				D8872EC82026622C00FAA315 /* AboutViewController.swift in Sources */,
 				D8872EA220265EE300FAA315 /* PokerEstimationViewController.swift in Sources */,
