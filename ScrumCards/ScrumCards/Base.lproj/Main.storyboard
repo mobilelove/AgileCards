@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nna-5S-ref">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sNQ-hm-EI4">
                                     <size key="itemSize" width="100" height="100"/>
@@ -68,9 +68,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Poker" image="PokerIcon" id="wmY-lB-7Fm">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" id="20Y-ry-qvJ"/>
                     <connections>
                         <outlet property="collectionView" destination="Nna-5S-ref" id="s29-xp-dyg"/>
@@ -78,7 +75,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="-750"/>
+            <point key="canvasLocation" x="79" y="-743"/>
+        </scene>
+        <!--Estimation Detail View Controller-->
+        <scene sceneID="Izz-Xn-oLd">
+            <objects>
+                <viewController storyboardIdentifier="EstimationDetailViewController" id="2ON-J2-61t" customClass="EstimationDetailViewController" customModule="ScrumCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WkS-EZ-gpM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-aI-O7d">
+                                <rect key="frame" x="129.5" y="214.5" width="117" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-pt-zDo">
+                                <rect key="frame" x="330" y="592" width="30" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ke9-d6-9hi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzH-6D-3IG">
+                                <rect key="frame" x="15" y="35" width="30" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="b56-1t-fdo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="qzH-6D-3IG" secondAttribute="trailing" constant="330" id="2kS-jq-89V"/>
+                            <constraint firstItem="t8o-Wc-t47" firstAttribute="trailing" secondItem="Psn-pt-zDo" secondAttribute="trailing" constant="15" id="3YO-Jg-dIt"/>
+                            <constraint firstItem="qzH-6D-3IG" firstAttribute="leading" secondItem="t8o-Wc-t47" secondAttribute="leading" constant="15" id="4Yx-zf-LJA"/>
+                            <constraint firstItem="t8o-Wc-t47" firstAttribute="bottom" secondItem="Psn-pt-zDo" secondAttribute="bottom" constant="15" id="UIU-bl-CBo"/>
+                            <constraint firstItem="qzH-6D-3IG" firstAttribute="top" secondItem="t8o-Wc-t47" secondAttribute="top" constant="15" id="aeC-i9-BxJ"/>
+                            <constraint firstItem="8Ub-aI-O7d" firstAttribute="centerX" secondItem="WkS-EZ-gpM" secondAttribute="centerX" id="kP1-pg-kf7"/>
+                            <constraint firstItem="8Ub-aI-O7d" firstAttribute="centerY" secondItem="WkS-EZ-gpM" secondAttribute="centerY" id="sOj-RX-D5P"/>
+                            <constraint firstItem="Psn-pt-zDo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WkS-EZ-gpM" secondAttribute="leading" constant="20" symbolic="YES" id="yYv-Yu-9Oj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t8o-Wc-t47"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomEstPointLbl" destination="Psn-pt-zDo" id="aFe-R7-sy8"/>
+                        <outlet property="selectedEstPointValLbl" destination="8Ub-aI-O7d" id="XYj-Q3-ePN"/>
+                        <outlet property="topEstPointLbl" destination="qzH-6D-3IG" id="89j-V2-K4X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uw1-av-Hac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="-743.47826086956525"/>
         </scene>
         <!--AboutView-->
         <scene sceneID="0iO-Kb-12j">
@@ -149,14 +202,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m2y-Yt-aUh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="TShirt" image="TShirtIcon" largeContentSizeImage="second" id="fI2-kN-v1U"/>
+                    <navigationItem key="navigationItem" id="AC5-mn-dvd"/>
                     <connections>
                         <outlet property="collectionView" destination="8a8-wJ-WZf" id="0Dn-H9-hG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4s-6u-kPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1071" y="340"/>
+            <point key="canvasLocation" x="-732" y="339.58020989505252"/>
         </scene>
         <!--FibonacciEstimationView-->
         <scene sceneID="wg7-f3-ORb">
@@ -211,14 +264,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fibonacci" image="FibonacciIcon" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="V06-xV-ujT"/>
                     <connections>
                         <outlet property="collectionView" destination="eD4-r6-5Yw" id="HyK-6t-RUn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-452" y="-70"/>
+            <point key="canvasLocation" x="226.40000000000001" y="-70.614692653673174"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -230,15 +283,74 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="afm-9m-1Jy"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Hhx-1r-i7d" kind="relationship" relationship="viewControllers" id="nQZ-ud-wD7"/>
+                        <segue destination="j1e-bF-HWQ" kind="relationship" relationship="viewControllers" id="afm-9m-1Jy"/>
+                        <segue destination="1Ci-eK-x0o" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="AEr-0X-5le" kind="relationship" relationship="viewControllers" id="nQZ-ud-wD7"/>
                         <segue destination="caX-Mh-Fcg" kind="relationship" relationship="viewControllers" id="fvq-pC-S5e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1436" y="-424"/>
+            <point key="canvasLocation" x="-1734" y="-447"/>
+        </scene>
+        <!--Poker-->
+        <scene sceneID="1pO-Sq-ULq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j1e-bF-HWQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Poker" image="PokerIcon" id="wmY-lB-7Fm">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WyQ-7k-Y5K">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="LNQ-ww-vVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3v-WF-bqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="-743"/>
+        </scene>
+        <!--Fibonacci-->
+        <scene sceneID="bgc-V3-4fs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ci-eK-x0o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fibonacci" image="FibonacciIcon" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xL9-3z-f9m">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="xoZ-Fx-Ojs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tes-Ry-CPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-480.80000000000001" y="-71.514242878560722"/>
+        </scene>
+        <!--TShirt-->
+        <scene sceneID="9sy-o4-3SY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AEr-0X-5le" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TShirt" image="TShirtIcon" largeContentSizeImage="second" id="fI2-kN-v1U"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JLq-mJ-dey">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hhx-1r-i7d" kind="relationship" relationship="rootViewController" id="DLW-EZ-xK5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g40-Gh-H3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1548" y="340"/>
         </scene>
     </scenes>
     <resources>

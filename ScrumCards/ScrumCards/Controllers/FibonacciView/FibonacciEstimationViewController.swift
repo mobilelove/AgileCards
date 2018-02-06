@@ -15,6 +15,8 @@ class FibonacciEstimationViewController: BaseEstimationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Fibonacci"
+        
         var scrumCardMapping: NSDictionary?
         
         if let scrumCardMappingPath = Bundle.main.path(forResource: "ScrumCardMapping", ofType: "plist") {
@@ -22,7 +24,7 @@ class FibonacciEstimationViewController: BaseEstimationViewController {
         }
         
         if let estimationValues = scrumCardMapping {
-            items = estimationValues.object(forKey: "FibonacciEstimation") as! [String]
+            items = estimationValues.object(forKey: "FibonacciEstimation") as? [String]
         }
         
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6091529D2029E4D900B3E623 /* EstimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091529C2029E4D900B3E623 /* EstimationDetailViewController.swift */; };
 		60EB28E820297C150099C33E /* BaseEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB28E720297C150099C33E /* BaseEstimationViewController.swift */; };
 		60F8762220295AA000CFEDA8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */; };
 		60F87627202970F600CFEDA8 /* ScrumCardMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60F87626202970F600CFEDA8 /* ScrumCardMapping.plist */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6091529C2029E4D900B3E623 /* EstimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationDetailViewController.swift; sourceTree = "<group>"; };
 		60EB28E720297C150099C33E /* BaseEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEstimationViewController.swift; sourceTree = "<group>"; };
 		60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		60F87626202970F600CFEDA8 /* ScrumCardMapping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScrumCardMapping.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				60EB28E720297C150099C33E /* BaseEstimationViewController.swift */,
+				6091529C2029E4D900B3E623 /* EstimationDetailViewController.swift */,
 				D8872EC12026615400FAA315 /* PokerView */,
 				D8872EC22026619300FAA315 /* FibonacciView */,
 				D8872EC3202661A300FAA315 /* TShirtView */,
@@ -288,6 +291,7 @@
 				D8872EA020265EE300FAA315 /* AppDelegate.swift in Sources */,
 				60EB28E820297C150099C33E /* BaseEstimationViewController.swift in Sources */,
 				D8872EC82026622C00FAA315 /* AboutViewController.swift in Sources */,
+				6091529D2029E4D900B3E623 /* EstimationDetailViewController.swift in Sources */,
 				D8872EA220265EE300FAA315 /* PokerEstimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

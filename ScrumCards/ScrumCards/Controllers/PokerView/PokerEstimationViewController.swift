@@ -15,6 +15,8 @@ class PokerEstimationViewController: BaseEstimationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Poker"
+        
         var scrumCardMapping: NSDictionary?
         
         if let scrumCardMappingPath = Bundle.main.path(forResource: "ScrumCardMapping", ofType: "plist") {
@@ -22,7 +24,7 @@ class PokerEstimationViewController: BaseEstimationViewController {
         }
         
         if let estimationValues = scrumCardMapping {
-            items = estimationValues.object(forKey: "PokerEstimation") as! [String]
+            items = estimationValues.object(forKey: "PokerEstimation") as? [String]
         }
         
     }

@@ -15,6 +15,10 @@ class TShirtEstimationViewController: BaseEstimationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "TShirt"
+        
+        itemsPerRow = 2
+        
         var scrumCardMapping: NSDictionary?
         
         if let scrumCardMappingPath = Bundle.main.path(forResource: "ScrumCardMapping", ofType: "plist") {
@@ -22,7 +26,7 @@ class TShirtEstimationViewController: BaseEstimationViewController {
         }
         
         if let estimationValues = scrumCardMapping {
-            items = estimationValues.object(forKey: "TShirtEstimation") as! [String]
+            items = estimationValues.object(forKey: "TShirtEstimation") as? [String]
         }
     }
 

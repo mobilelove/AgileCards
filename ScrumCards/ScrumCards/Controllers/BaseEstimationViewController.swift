@@ -11,7 +11,7 @@ import UIKit
 class BaseEstimationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
-    fileprivate let itemsPerRow: CGFloat = 3
+    var itemsPerRow: CGFloat = 3
     var items:[String]?
     
     override func viewDidLoad() {
@@ -36,6 +36,15 @@ class BaseEstimationViewController: UIViewController, UICollectionViewDataSource
         cell.estimationIndLbl.text = items?[indexPath.row]
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let estimationDetailVC = storyboard.instantiateViewController(withIdentifier: "EstimationDetailViewController") as! EstimationDetailViewController
+        estimationDetailVC.selectedEstPointValue = items?[indexPath.row]
+        
+        self.navigationController?.pushViewController(estimationDetailVC, animated:true)
     }
 
     override func didReceiveMemoryWarning() {
