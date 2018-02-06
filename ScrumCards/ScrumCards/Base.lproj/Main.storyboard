@@ -68,7 +68,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wmY-lB-7Fm"/>
+                    <tabBarItem key="tabBarItem" title="Poker" image="PokerIcon" id="wmY-lB-7Fm">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="20Y-ry-qvJ"/>
                     <connections>
                         <outlet property="collectionView" destination="Nna-5S-ref" id="s29-xp-dyg"/>
@@ -76,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5.5999999999999996" y="-721.88905547226398"/>
+            <point key="canvasLocation" x="-468" y="-750"/>
         </scene>
         <!--AboutView-->
         <scene sceneID="0iO-Kb-12j">
@@ -88,7 +90,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XV1-hZ-qLo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="nr8-nF-raq"/>
+                    <tabBarItem key="tabBarItem" title="About" image="AboutUsIcon" id="nr8-nF-raq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1b-c4-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,14 +99,60 @@
         <!--TShirtEstimationView-->
         <scene sceneID="mnM-80-Vg0">
             <objects>
-                <viewController id="Hhx-1r-i7d" userLabel="TShirtEstimationView" sceneMemberID="viewController">
+                <viewController id="Hhx-1r-i7d" userLabel="TShirtEstimationView" customClass="TShirtEstimationViewController" customModule="ScrumCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uqA-RZ-Yq4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-wJ-WZf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HiG-g6-CDB">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="d3O-JI-ol9" customClass="CollectionViewCell" customModule="ScrumCards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRg-Zs-KNK">
+                                                    <rect key="frame" x="33" y="19" width="34" height="62.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="tRg-Zs-KNK" firstAttribute="centerX" secondItem="d3O-JI-ol9" secondAttribute="centerX" id="2av-pi-eVa"/>
+                                            <constraint firstItem="tRg-Zs-KNK" firstAttribute="centerY" secondItem="d3O-JI-ol9" secondAttribute="centerY" id="Tco-6D-ErZ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="estimationIndLbl" destination="tRg-Zs-KNK" id="0qd-uM-ho4"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hhx-1r-i7d" id="2Xm-O4-rat"/>
+                                    <outlet property="delegate" destination="Hhx-1r-i7d" id="CKG-wH-InW"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m2y-Yt-aUh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tshirt" largeContentSizeImage="second" id="fI2-kN-v1U"/>
+                    <tabBarItem key="tabBarItem" title="TShirt" image="TShirtIcon" largeContentSizeImage="second" id="fI2-kN-v1U"/>
+                    <connections>
+                        <outlet property="collectionView" destination="8a8-wJ-WZf" id="0Dn-H9-hG1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4s-6u-kPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,30 +166,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-r6-5Yw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="S3d-5f-rAG">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="ZaY-gY-Bq6" customClass="CollectionViewCell" customModule="ScrumCards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-cd-bvL">
+                                                    <rect key="frame" x="33" y="19" width="34" height="62.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="TSY-cd-bvL" firstAttribute="centerX" secondItem="ZaY-gY-Bq6" secondAttribute="centerX" id="cRk-oY-Yda"/>
+                                            <constraint firstItem="TSY-cd-bvL" firstAttribute="centerY" secondItem="ZaY-gY-Bq6" secondAttribute="centerY" id="sIZ-69-4k6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="estimationIndLbl" destination="TSY-cd-bvL" id="KXT-4P-9ie"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="C2y-ST-Jx1"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="rYD-SD-vEL"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fibonacci" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Fibonacci" image="FibonacciIcon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="collectionView" destination="eD4-r6-5Yw" id="HyK-6t-RUn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,6 +242,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AboutUsIcon" width="25" height="25"/>
+        <image name="FibonacciIcon" width="25" height="25"/>
+        <image name="PokerIcon" width="25" height="23"/>
+        <image name="TShirtIcon" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

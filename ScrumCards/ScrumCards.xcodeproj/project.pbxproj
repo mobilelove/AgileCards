@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60EB28E820297C150099C33E /* BaseEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB28E720297C150099C33E /* BaseEstimationViewController.swift */; };
 		60F8762220295AA000CFEDA8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */; };
+		60F87627202970F600CFEDA8 /* ScrumCardMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60F87626202970F600CFEDA8 /* ScrumCardMapping.plist */; };
 		D8872EA020265EE300FAA315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8872E9F20265EE300FAA315 /* AppDelegate.swift */; };
 		D8872EA220265EE300FAA315 /* PokerEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8872EA120265EE300FAA315 /* PokerEstimationViewController.swift */; };
 		D8872EA420265EE300FAA315 /* FibonacciEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8872EA320265EE300FAA315 /* FibonacciEstimationViewController.swift */; };
@@ -30,7 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60EB28E720297C150099C33E /* BaseEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEstimationViewController.swift; sourceTree = "<group>"; };
 		60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		60F87626202970F600CFEDA8 /* ScrumCardMapping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScrumCardMapping.plist; sourceTree = "<group>"; };
 		D8872E9C20265EE300FAA315 /* ScrumCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8872E9F20265EE300FAA315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8872EA120265EE300FAA315 /* PokerEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerEstimationViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		60F87623202963DE00CFEDA8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				60EB28E720297C150099C33E /* BaseEstimationViewController.swift */,
 				D8872EC12026615400FAA315 /* PokerView */,
 				D8872EC22026619300FAA315 /* FibonacciView */,
 				D8872EC3202661A300FAA315 /* TShirtView */,
@@ -119,14 +124,15 @@
 		D8872E9E20265EE300FAA315 /* ScrumCards */ = {
 			isa = PBXGroup;
 			children = (
+				D8872E9F20265EE300FAA315 /* AppDelegate.swift */,
+				D8872EA520265EE300FAA315 /* Main.storyboard */,
+				D8872EAA20265EE300FAA315 /* LaunchScreen.storyboard */,
 				60F87623202963DE00CFEDA8 /* Controllers */,
 				60F87624202963F400CFEDA8 /* ViewModel */,
 				60F876252029640900CFEDA8 /* Views */,
-				D8872E9F20265EE300FAA315 /* AppDelegate.swift */,
-				D8872EA520265EE300FAA315 /* Main.storyboard */,
 				D8872EA820265EE300FAA315 /* Assets.xcassets */,
-				D8872EAA20265EE300FAA315 /* LaunchScreen.storyboard */,
 				D8872EAD20265EE300FAA315 /* Info.plist */,
+				60F87626202970F600CFEDA8 /* ScrumCardMapping.plist */,
 			);
 			path = ScrumCards;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F87627202970F600CFEDA8 /* ScrumCardMapping.plist in Resources */,
 				D8872EAC20265EE300FAA315 /* LaunchScreen.storyboard in Resources */,
 				D8872EA920265EE300FAA315 /* Assets.xcassets in Resources */,
 				D8872EA720265EE300FAA315 /* Main.storyboard in Resources */,
@@ -279,6 +286,7 @@
 				D8872EC62026621B00FAA315 /* TShirtEstimationViewController.swift in Sources */,
 				60F8762220295AA000CFEDA8 /* CollectionViewCell.swift in Sources */,
 				D8872EA020265EE300FAA315 /* AppDelegate.swift in Sources */,
+				60EB28E820297C150099C33E /* BaseEstimationViewController.swift in Sources */,
 				D8872EC82026622C00FAA315 /* AboutViewController.swift in Sources */,
 				D8872EA220265EE300FAA315 /* PokerEstimationViewController.swift in Sources */,
 			);

@@ -8,11 +8,23 @@
 
 import UIKit
 
-class FibonacciEstimationViewController: UIViewController {
+class FibonacciEstimationViewController: BaseEstimationViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var scrumCardMapping: NSDictionary?
+        
+        if let scrumCardMappingPath = Bundle.main.path(forResource: "ScrumCardMapping", ofType: "plist") {
+            scrumCardMapping = NSDictionary(contentsOfFile: scrumCardMappingPath)
+        }
+        
+        if let estimationValues = scrumCardMapping {
+            items = estimationValues.object(forKey: "FibonacciEstimation") as! [String]
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
