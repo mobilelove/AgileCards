@@ -91,13 +91,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		60F87624202963F400CFEDA8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		60F876252029640900CFEDA8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +124,6 @@
 				D8872EA520265EE300FAA315 /* Main.storyboard */,
 				D8872EAA20265EE300FAA315 /* LaunchScreen.storyboard */,
 				60F87623202963DE00CFEDA8 /* Controllers */,
-				60F87624202963F400CFEDA8 /* ViewModel */,
 				60F876252029640900CFEDA8 /* Views */,
 				D8872EA820265EE300FAA315 /* Assets.xcassets */,
 				D8872EAD20265EE300FAA315 /* Info.plist */,
