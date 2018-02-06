@@ -9,15 +9,6 @@
 import UIKit
 
 class PokerEstimationViewController: UIViewController {
-
-    
-    /*override func show(_ vc: UIViewController, sender: Any?) {
-        
-    }
-    @IBAction func zeroButton(_ sender: Any) {
-    
-    
-    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +19,6 @@ class PokerEstimationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
