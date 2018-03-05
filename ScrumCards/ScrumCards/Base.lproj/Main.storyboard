@@ -141,7 +141,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XV1-hZ-qLo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="AboutUsIcon" id="nr8-nF-raq"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="AboutUsIcon" id="nr8-nF-raq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1b-c4-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
