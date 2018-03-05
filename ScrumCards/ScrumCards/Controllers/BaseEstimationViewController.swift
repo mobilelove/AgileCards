@@ -16,6 +16,7 @@ class BaseEstimationViewController: UIViewController, UICollectionViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationItem.backBarButtonItem?.tintColor = UIColor.white
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

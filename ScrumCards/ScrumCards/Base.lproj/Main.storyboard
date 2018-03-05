@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,12 +38,10 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrD-ne-HKz">
                                                     <rect key="frame" x="33" y="19" width="34" height="62.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
-                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.96470588239999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="rrD-ne-HKz" firstAttribute="centerY" secondItem="l6i-5d-bje" secondAttribute="centerY" id="8w2-eS-NFj"/>
                                             <constraint firstItem="rrD-ne-HKz" firstAttribute="centerX" secondItem="l6i-5d-bje" secondAttribute="centerX" id="vwg-eL-cZw"/>
@@ -281,6 +279,8 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="j1e-bF-HWQ" kind="relationship" relationship="viewControllers" id="afm-9m-1Jy"/>
@@ -354,10 +354,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AboutUsIcon" width="25" height="25"/>
-        <image name="FibonacciIcon" width="25" height="25"/>
-        <image name="PokerIcon" width="25" height="23"/>
-        <image name="TShirtIcon" width="25" height="25"/>
+        <image name="AboutUsIcon" width="25" height="26"/>
+        <image name="FibonacciIcon" width="25" height="26"/>
+        <image name="PokerIcon" width="25" height="26"/>
+        <image name="TShirtIcon" width="25" height="26"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
