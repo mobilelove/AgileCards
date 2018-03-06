@@ -36,8 +36,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrD-ne-HKz">
-                                                    <rect key="frame" x="33" y="19" width="34" height="62.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                                    <rect key="frame" x="33.5" y="20.5" width="33" height="60"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -134,18 +135,18 @@
         <!--AboutView-->
         <scene sceneID="0iO-Kb-12j">
             <objects>
-                <viewController id="caX-Mh-Fcg" userLabel="AboutView" sceneMemberID="viewController">
+                <viewController id="caX-Mh-Fcg" userLabel="AboutView" customClass="AboutViewController" customModule="ScrumCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kB9-Qp-T1W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XV1-hZ-qLo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Help" image="AboutUsIcon" id="nr8-nF-raq"/>
+                    <navigationItem key="navigationItem" id="a4n-3y-jMY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1b-c4-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1710" y="340"/>
+            <point key="canvasLocation" x="-2127.1999999999998" y="350.37481259370315"/>
         </scene>
         <!--TShirtEstimationView-->
         <scene sceneID="mnM-80-Vg0">
@@ -174,9 +175,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRg-Zs-KNK">
-                                                    <rect key="frame" x="33" y="19" width="34" height="62.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="33.5" y="20.5" width="33" height="60"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -207,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4s-6u-kPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="339.58020989505252"/>
+            <point key="canvasLocation" x="-392.80000000000001" y="339.58020989505252"/>
         </scene>
         <!--FibonacciEstimationView-->
         <scene sceneID="wg7-f3-ORb">
@@ -236,9 +237,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-cd-bvL">
-                                                    <rect key="frame" x="33" y="19" width="34" height="62.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="34" y="20.5" width="33" height="60"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -269,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226.40000000000001" y="-70.614692653673174"/>
+            <point key="canvasLocation" x="565.60000000000002" y="-70.614692653673174"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -280,13 +281,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.066666666666666666" green="0.4823529411764706" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="j1e-bF-HWQ" kind="relationship" relationship="viewControllers" id="afm-9m-1Jy"/>
                         <segue destination="1Ci-eK-x0o" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="AEr-0X-5le" kind="relationship" relationship="viewControllers" id="nQZ-ud-wD7"/>
-                        <segue destination="caX-Mh-Fcg" kind="relationship" relationship="viewControllers" id="fvq-pC-S5e"/>
+                        <segue destination="faD-Ys-MmF" kind="relationship" relationship="viewControllers" id="fvq-pC-S5e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -331,7 +332,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tes-Ry-CPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-480.80000000000001" y="-71.514242878560722"/>
+            <point key="canvasLocation" x="-141.59999999999999" y="-71.514242878560722"/>
         </scene>
         <!--TShirt-->
         <scene sceneID="9sy-o4-3SY">
@@ -350,7 +351,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g40-Gh-H3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1548" y="340"/>
+            <point key="canvasLocation" x="-1208.8" y="339.58020989505252"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="jM8-4c-tWJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="faD-Ys-MmF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Help" image="AboutUsIcon" id="nr8-nF-raq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="poS-Wy-4Nj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="caX-Mh-Fcg" kind="relationship" relationship="rootViewController" id="pMV-mi-FsL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Lt-f6-HDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3012" y="350"/>
         </scene>
     </scenes>
     <resources>

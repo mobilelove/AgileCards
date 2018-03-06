@@ -13,6 +13,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Help"
     }
 
     override func didReceiveMemoryWarning() {

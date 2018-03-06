@@ -15,7 +15,9 @@ class CollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        self.backgroundColor = UIColor.init(red: 0.0/255.0, green: 145.0/255.0, blue: 147.0/255.0, alpha: 0.4)
+        self.estimationIndLbl.textColor = UIColor.white
+        
+        self.backgroundColor = UIColor.init(red: 17.0/255.0, green: 123.0/255.0, blue: 180.0/255.0, alpha: 1.0)
         
         self.layer.cornerRadius = 10.0
         
