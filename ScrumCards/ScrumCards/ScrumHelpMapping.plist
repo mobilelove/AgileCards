@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>What is Planning Poker?</key>
+		<string>Planning Poker is used for estimate the user stories</string>
+	</dict>
+	<dict>
+		<key>What is TShirt Estimation?</key>
+		<string>TShirt Estimation</string>
+	</dict>
+	<dict>
+		<key>What is Fibonacci Estimation?</key>
+		<string>Fibonacci Estimation</string>
+	</dict>
+</array>
+</plist>
