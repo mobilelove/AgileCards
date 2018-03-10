@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<dict>
-		<key>What is Planning Poker?</key>
-		<string>Planning Poker is used for estimate the user stories</string>
-	</dict>
-	<dict>
-		<key>What is TShirt Estimation?</key>
-		<string>TShirt Estimation</string>
-	</dict>
-	<dict>
-		<key>What is Fibonacci Estimation?</key>
-		<string>Fibonacci Estimation</string>
-	</dict>
-</array>
+<dict>
+	<key>SectionTitles</key>
+	<array>
+		<string>What is Planning Poker?</string>
+		<string>What is TShirt Estimation?</string>
+		<string>What is Fibonacci Estimation?</string>
+	</array>
+	<key>RowItems</key>
+	<array>
+		<array>
+			<string>Planning Poker is an agile estimating and planning technique that is consensus based. To start a poker planning session, the product owner or customer reads an agile user story or describes a feature to the estimators. 
+Each estimator is holding a deck of Planning Poker cards with values like 0, 1, 2, 3, 5, 8, 13, 20, 40 and 100, which is the sequence we recommend. The values represent the number of story points, ideal days, or other units in which the team estimates.The estimators discuss the feature, asking questions of the product owner as needed. When the feature has been fully discussed, each estimator privately selects one card to represent his or her estimate. All cards are then revealed at the same time.If all estimators selected the same value, that becomes the estimate. If not, the estimators discuss their estimates. The high and low estimators should especially share their reasons. After further discussion, each estimator reselects an estimate card, and all cards are again revealed at the same time.</string>
+		</array>
+		<array>
+			<string>TShirt Estimation</string>
+		</array>
+		<array>
+			<string>Fibonacci Estimation</string>
+		</array>
+	</array>
+</dict>
 </plist>
