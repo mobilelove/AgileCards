@@ -12,13 +12,18 @@
 	<array>
 		<array>
 			<string>Planning Poker is an agile estimating and planning technique that is consensus based. To start a poker planning session, the product owner or customer reads an agile user story or describes a feature to the estimators. 
-Each estimator is holding a deck of Planning Poker cards with values like 0, 1, 2, 3, 5, 8, 13, 20, 40 and 100, which is the sequence we recommend. The values represent the number of story points, ideal days, or other units in which the team estimates.The estimators discuss the feature, asking questions of the product owner as needed. When the feature has been fully discussed, each estimator privately selects one card to represent his or her estimate. All cards are then revealed at the same time.If all estimators selected the same value, that becomes the estimate. If not, the estimators discuss their estimates. The high and low estimators should especially share their reasons. After further discussion, each estimator reselects an estimate card, and all cards are again revealed at the same time.</string>
+
+Each estimator is holding a deck of Planning Poker cards with values like 0, 1, 2, 3, 5, 8, 13, 20, 40 and 100, which is the sequence we recommend. The values represent the number of story points, ideal days, or other units in which the team estimates.
+
+The estimators discuss the feature, asking questions of the product owner as needed. When the feature has been fully discussed, each estimator privately selects one card to represent his or her estimate. All cards are then revealed at the same time.
+
+If all estimators selected the same value, that becomes the estimate. If not, the estimators discuss their estimates. The high and low estimators should especially share their reasons. After further discussion, each estimator reselects an estimate card, and all cards are again revealed at the same time.</string>
 		</array>
 		<array>
 			<string>TShirt Estimation</string>
 		</array>
 		<array>
-			<string>Fibonacci Estimation</string>
+			<string>When estimating the relative size of user stories in agile software development the members of the team are supposed to estimate the size of a user story as being 1, 2, 3, 5, 8, 13,.. So the estimated values should resemble the Fibonacci series.Using Fibonacci series is helpful in this scenario because the larger user stories (i.e. stories of size greater than 8) that tend to lead to inconsistent estimates between each team member can be grouped to the nearest estimated Fibonacci number of the corresponding bucket in the backlog.In case of small user stories the bucket difference is small and hence the final cost of resource and time could be finalized more accurately. An advantage of Fibonacci sequence is that it allows us to disaggregate a user story from one large bucket into two preceding buckets (since a bucket is formed by adding the size of two preceding buckets). This process helps to create optimal user stories used in Agile development.</string>
 		</array>
 	</array>
 </dict>
