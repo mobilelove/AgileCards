@@ -7,16 +7,51 @@
 //
 
 import UIKit
+import Social
 
 class HelpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var helpTableView : UITableView?
+    @IBOutlet weak var socialShareView : UIView?
     
     var expandedSectionHeaderNumber: Int = -1
     
     var helpSections : Array<Any> = []
     var helpSectionItems : Array<Any> = []
     
+    @IBAction func facebookShareOptionSelected(_ sender: Any) {
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            self.present(fbShare, animated: true, completion: nil)
+            
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func twitterShareOptionSelected(_ sender: Any) {
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+            
+            let tweetShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            self.present(tweetShare, animated: true, completion: nil)
+            
+        } else {
+            
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to tweet.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +74,8 @@ class HelpViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.helpTableView?.estimatedRowHeight = 50.0
         
         self.helpTableView?.reloadData()
+        
+        self.helpTableView?.tableFooterView = socialShareView
     }
 
     
@@ -158,6 +195,7 @@ class HelpViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.helpTableView!.endUpdates()
         }
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
