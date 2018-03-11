@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HelpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var helpTableView : UITableView?
     
@@ -45,7 +45,6 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func numberOfSections(in tableView: UITableView) -> Int {
         
         if helpSections.count > 0 {
-            self.helpTableView?.backgroundView = nil
             return helpSections.count
         }
         
@@ -71,7 +70,7 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
         sectionHeaderView.tag = section
         
         let headerTapGesture = UITapGestureRecognizer()
-        headerTapGesture.addTarget(self, action: #selector(AboutViewController.sectionHeaderWasTouched(_:)))
+        headerTapGesture.addTarget(self, action: #selector(HelpViewController.sectionHeaderWasTouched(_:)))
         sectionHeaderView.addGestureRecognizer(headerTapGesture)
         
         return sectionHeaderView

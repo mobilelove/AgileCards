@@ -5,6 +5,7 @@
 	<key>PokerEstimation</key>
 	<array>
 		<string>0</string>
+		<string>1/2</string>
 		<string>1</string>
 		<string>2</string>
 		<string>3</string>
@@ -14,6 +15,7 @@
 		<string>20</string>
 		<string>40</string>
 		<string>100</string>
+		<string>∞</string>
 		<string>?</string>
 	</array>
 	<key>FibonacciEstimation</key>

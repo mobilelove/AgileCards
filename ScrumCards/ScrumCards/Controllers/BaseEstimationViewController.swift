@@ -10,13 +10,18 @@ import UIKit
 
 class BaseEstimationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    fileprivate var sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     var itemsPerRow: CGFloat = 3
     var items:[String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationItem.backBarButtonItem?.tintColor = UIColor.white
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

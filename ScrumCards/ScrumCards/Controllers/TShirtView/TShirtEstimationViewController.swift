@@ -29,6 +29,11 @@ class TShirtEstimationViewController: BaseEstimationViewController {
             items = estimationValues.object(forKey: "TShirtEstimation") as? [String]
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

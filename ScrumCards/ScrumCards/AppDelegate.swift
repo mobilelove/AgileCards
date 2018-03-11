@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().barTintColor = UIColor.init(red: 17.0/255.0, green: 123.0/255.0, blue: 180.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                            NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20.0)]
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 12.0)], for: .normal)
         
         return true
     }
