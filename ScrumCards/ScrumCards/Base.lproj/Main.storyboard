@@ -45,8 +45,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrD-ne-HKz">
-                                                    <rect key="frame" x="33.5" y="20.5" width="33" height="60"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                    <rect key="frame" x="37" y="26.5" width="26.5" height="48"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -93,9 +93,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-aI-O7d">
-                                <rect key="frame" x="124" y="212" width="127.5" height="243.5"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-aI-O7d">
+                                <rect key="frame" x="137" y="237" width="102" height="194.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="160"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -155,23 +155,23 @@
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-743.47826086956525"/>
         </scene>
-        <!--AboutView-->
+        <!--HelpView-->
         <scene sceneID="0iO-Kb-12j">
             <objects>
-                <viewController id="caX-Mh-Fcg" userLabel="AboutView" customClass="HelpViewController" customModule="ScrumCards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="caX-Mh-Fcg" userLabel="HelpView" customClass="HelpViewController" customModule="ScrumCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kB9-Qp-T1W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iNs-n1-roG">
-                                <rect key="frame" x="0.0" y="74" width="375" height="544"/>
+                                <rect key="frame" x="10" y="74" width="355" height="544"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelpCell" rowHeight="70" id="mjc-uo-BEV" customClass="HelpViewCell" customModule="ScrumCards" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="28" width="355" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mjc-uo-BEV" id="C46-0S-be2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CW-HJ-WCb">
@@ -205,9 +205,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iNs-n1-roG" firstAttribute="trailing" secondItem="XV1-hZ-qLo" secondAttribute="trailing" id="5PY-tl-CiI"/>
+                            <constraint firstItem="XV1-hZ-qLo" firstAttribute="trailing" secondItem="iNs-n1-roG" secondAttribute="trailing" constant="10" id="NoJ-gV-P67"/>
                             <constraint firstItem="iNs-n1-roG" firstAttribute="top" secondItem="kB9-Qp-T1W" secondAttribute="topMargin" constant="10" id="dzS-4q-o4H"/>
-                            <constraint firstItem="iNs-n1-roG" firstAttribute="leading" secondItem="XV1-hZ-qLo" secondAttribute="leading" id="fzf-LO-I8d"/>
+                            <constraint firstItem="iNs-n1-roG" firstAttribute="leading" secondItem="XV1-hZ-qLo" secondAttribute="leading" constant="10" id="fzf-LO-I8d"/>
                             <constraint firstItem="iNs-n1-roG" firstAttribute="bottom" secondItem="XV1-hZ-qLo" secondAttribute="bottom" id="unv-YC-gEB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XV1-hZ-qLo"/>
@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1b-c4-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2127" y="407"/>
+            <point key="canvasLocation" x="-2127.1999999999998" y="406.14692653673166"/>
         </scene>
         <!--TShirtEstimationView-->
         <scene sceneID="mnM-80-Vg0">

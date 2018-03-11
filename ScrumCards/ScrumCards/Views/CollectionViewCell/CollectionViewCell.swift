@@ -16,6 +16,7 @@ class CollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         
         self.estimationIndLbl.textColor = UIColor.white
+        self.estimationIndLbl.font = UIFont.boldSystemFont(ofSize: 40.0)
         
         self.backgroundColor = UIColor.init(red: 17.0/255.0, green: 123.0/255.0, blue: 180.0/255.0, alpha: 1.0)
         

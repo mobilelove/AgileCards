@@ -5,8 +5,8 @@
 	<key>SectionTitles</key>
 	<array>
 		<string>What is Planning Poker?</string>
-		<string>What is TShirt Estimation?</string>
 		<string>What is Fibonacci Estimation?</string>
+		<string>What is TShirt Estimation?</string>
 	</array>
 	<key>RowItems</key>
 	<array>
@@ -20,11 +20,6 @@ The estimators discuss the feature, asking questions of the product owner as nee
 If all estimators selected the same value, that becomes the estimate. If not, the estimators discuss their estimates. The high and low estimators should especially share their reasons. After further discussion, each estimator reselects an estimate card, and all cards are again revealed at the same time.</string>
 		</array>
 		<array>
-			<string>With T-shirt sizing, the team is asked to estimate whether they think a story is extra-small, small, medium, large, extra-large, or double extra-large. By removing the implied precision of a numerical score, the team is free to think in a more abstract way about the effort involved in a story.
-
-This is a very informal technique, and can be used quickly with a large number of items.  Usually, the decisions about the size are based on open, collaborative discussion, possibly with the occasional vote to break a stalemate.</string>
-		</array>
-		<array>
 			<string>When estimating the relative size of user stories in agile software development the members of the team are supposed to estimate the size of a user story as being  0, 1, 2, 3, 5, 8, 13,.. So the estimated values should resemble the Fibonacci series.
 
 Using Fibonacci series is helpful in this scenario because the larger user stories (i.e. stories of size greater than 8) that tend to lead to inconsistent estimates between each team member can be grouped to the nearest estimated Fibonacci number of the corresponding bucket in the backlog.
@@ -32,6 +27,11 @@ Using Fibonacci series is helpful in this scenario because the larger user stori
 In case of small user stories the bucket difference is small and hence the final cost of resource and time could be finalized more accurately. 
 
 An advantage of Fibonacci sequence is that it allows us to disaggregate a user story from one large bucket into two preceding buckets (since a bucket is formed by adding the size of two preceding buckets). This process helps to create optimal user stories used in Agile development.</string>
+		</array>
+		<array>
+			<string>With T-shirt sizing, the team is asked to estimate whether they think a story is extra-small, small, medium, large, extra-large, or double extra-large. By removing the implied precision of a numerical score, the team is free to think in a more abstract way about the effort involved in a story.
+
+This is a very informal technique, and can be used quickly with a large number of items.  Usually, the decisions about the size are based on open, collaborative discussion, possibly with the occasional vote to break a stalemate.</string>
 		</array>
 	</array>
 </dict>
