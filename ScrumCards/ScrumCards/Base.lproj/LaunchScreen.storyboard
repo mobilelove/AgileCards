@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Chalkduster.ttf">
-            <string>Chalkduster</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="BHO-Vp-QtB">
@@ -23,17 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agile Scrum Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-Od-F3b">
-                                <rect key="frame" x="41" y="316.5" width="295" height="35.5"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
-                                <color key="textColor" red="0.066666666669999999" green="0.4823529412" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch screen" translatesAutoresizingMaskIntoConstraints="NO" id="a8K-iz-5Dg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6xm-Od-F3b" firstAttribute="centerX" secondItem="cij-3X-09F" secondAttribute="centerX" id="68x-mR-Cc4"/>
-                            <constraint firstItem="6xm-Od-F3b" firstAttribute="centerY" secondItem="cij-3X-09F" secondAttribute="centerY" id="XOo-F4-bZJ"/>
+                            <constraint firstItem="ojr-jc-ChJ" firstAttribute="trailing" secondItem="a8K-iz-5Dg" secondAttribute="trailing" id="4U1-Fu-WHo"/>
+                            <constraint firstItem="a8K-iz-5Dg" firstAttribute="leading" secondItem="ojr-jc-ChJ" secondAttribute="leading" id="NsP-kO-cfY"/>
+                            <constraint firstItem="ojr-jc-ChJ" firstAttribute="bottom" secondItem="a8K-iz-5Dg" secondAttribute="bottom" id="V2s-xH-SpE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ojr-jc-ChJ"/>
                     </view>
@@ -43,4 +36,7 @@
             <point key="canvasLocation" x="100" y="392.65367316341832"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch screen" width="1000" height="667"/>
+    </resources>
 </document>
