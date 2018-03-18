@@ -17,17 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="cij-3X-09F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch screen" translatesAutoresizingMaskIntoConstraints="NO" id="a8K-iz-5Dg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ojr-jc-ChJ" firstAttribute="trailing" secondItem="a8K-iz-5Dg" secondAttribute="trailing" id="4U1-Fu-WHo"/>
-                            <constraint firstItem="a8K-iz-5Dg" firstAttribute="leading" secondItem="ojr-jc-ChJ" secondAttribute="leading" id="NsP-kO-cfY"/>
-                            <constraint firstItem="ojr-jc-ChJ" firstAttribute="bottom" secondItem="a8K-iz-5Dg" secondAttribute="bottom" id="V2s-xH-SpE"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ojr-jc-ChJ"/>
                     </view>
                 </viewController>
@@ -36,7 +26,4 @@
             <point key="canvasLocation" x="100" y="392.65367316341832"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="launch screen" width="1000" height="667"/>
-    </resources>
 </document>
