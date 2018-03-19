@@ -93,10 +93,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-aI-O7d">
-                                <rect key="frame" x="137" y="237" width="102" height="194.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailBG" translatesAutoresizingMaskIntoConstraints="NO" id="TT4-DD-aT3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-aI-O7d">
+                                <rect key="frame" x="142" y="236" width="102" height="194.5"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="160"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -113,22 +116,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-pt-zDo">
-                                <rect key="frame" x="328" y="592" width="32" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Ke9-d6-9hi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzH-6D-3IG">
                                 <rect key="frame" x="15" y="35" width="32" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="b56-1t-fdo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="50"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-pt-zDo">
+                                <rect key="frame" x="327" y="587" width="32" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ke9-d6-9hi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -137,8 +140,12 @@
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="qzH-6D-3IG" secondAttribute="trailing" constant="330" id="2kS-jq-89V"/>
                             <constraint firstItem="t8o-Wc-t47" firstAttribute="trailing" secondItem="Psn-pt-zDo" secondAttribute="trailing" constant="15" id="3YO-Jg-dIt"/>
                             <constraint firstItem="qzH-6D-3IG" firstAttribute="leading" secondItem="t8o-Wc-t47" secondAttribute="leading" constant="15" id="4Yx-zf-LJA"/>
+                            <constraint firstItem="TT4-DD-aT3" firstAttribute="top" secondItem="WkS-EZ-gpM" secondAttribute="top" id="8p4-vJ-Vnf"/>
                             <constraint firstItem="t8o-Wc-t47" firstAttribute="bottom" secondItem="Psn-pt-zDo" secondAttribute="bottom" constant="15" id="UIU-bl-CBo"/>
+                            <constraint firstItem="TT4-DD-aT3" firstAttribute="trailing" secondItem="t8o-Wc-t47" secondAttribute="trailing" id="ZD5-h6-2gU"/>
                             <constraint firstItem="qzH-6D-3IG" firstAttribute="top" secondItem="t8o-Wc-t47" secondAttribute="top" constant="15" id="aeC-i9-BxJ"/>
+                            <constraint firstItem="TT4-DD-aT3" firstAttribute="leading" secondItem="t8o-Wc-t47" secondAttribute="leading" id="dVR-Gk-ZuF"/>
+                            <constraint firstItem="TT4-DD-aT3" firstAttribute="bottom" secondItem="t8o-Wc-t47" secondAttribute="bottom" id="j3U-h6-1wv"/>
                             <constraint firstItem="8Ub-aI-O7d" firstAttribute="centerX" secondItem="WkS-EZ-gpM" secondAttribute="centerX" id="kP1-pg-kf7"/>
                             <constraint firstItem="8Ub-aI-O7d" firstAttribute="centerY" secondItem="WkS-EZ-gpM" secondAttribute="centerY" id="sOj-RX-D5P"/>
                             <constraint firstItem="Psn-pt-zDo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WkS-EZ-gpM" secondAttribute="leading" constant="20" symbolic="YES" id="yYv-Yu-9Oj"/>
@@ -176,7 +183,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CW-HJ-WCb">
                                                     <rect key="frame" x="10" y="20" width="335" height="30"/>
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -220,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1b-c4-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2127.1999999999998" y="406.14692653673166"/>
+            <point key="canvasLocation" x="-2046" y="349"/>
         </scene>
         <!--TShirtEstimationView-->
         <scene sceneID="mnM-80-Vg0">
@@ -452,5 +459,6 @@
         <image name="Help" width="25" height="25"/>
         <image name="PokerIcon" width="25" height="25"/>
         <image name="TShirtIcon" width="25" height="26"/>
+        <image name="detailBG" width="156" height="322"/>
     </resources>
 </document>

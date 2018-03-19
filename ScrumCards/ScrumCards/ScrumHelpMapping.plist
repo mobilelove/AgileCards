@@ -4,9 +4,9 @@
 <dict>
 	<key>SectionTitles</key>
 	<array>
-		<string>What is Planning Poker?</string>
-		<string>What is Fibonacci Estimation?</string>
-		<string>What is TShirt Estimation?</string>
+		<string>Planning Poker?</string>
+		<string>Fibonacci Estimation?</string>
+		<string>TShirt Estimation?</string>
 	</array>
 	<key>RowItems</key>
 	<array>
