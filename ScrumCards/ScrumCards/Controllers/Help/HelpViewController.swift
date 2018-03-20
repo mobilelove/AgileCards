@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import Social
 
 class HelpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var helpTableView : UITableView?
-    
     var expandedSectionHeaderNumber: Int = -1
-    
     var helpSections : Array<Any> = []
     var helpSectionItems : Array<Any> = []
+    
+//MARK:  ViewController lifecycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +38,9 @@ class HelpViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.helpTableView?.estimatedRowHeight = 50.0
         
         self.helpTableView?.reloadData()
-    
     }
 
+//MARK: UITableView datasource and delegates methods
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -117,6 +116,7 @@ class HelpViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    
     func tableViewCollapeSection(_ section: Int, sectionHeaderView: SectionHeaderView) {
         let sectionData = self.helpSectionItems[section] as! NSArray
         
@@ -165,6 +165,4 @@ class HelpViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }
