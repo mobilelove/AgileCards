@@ -45,7 +45,7 @@
 		60EB28E720297C150099C33E /* BaseEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEstimationViewController.swift; sourceTree = "<group>"; };
 		60F8762120295AA000CFEDA8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		60F87626202970F600CFEDA8 /* ScrumCardMapping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScrumCardMapping.plist; sourceTree = "<group>"; };
-		D8872E9C20265EE300FAA315 /* ScrumCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8872E9C20265EE300FAA315 /* ScrumCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8872E9F20265EE300FAA315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8872EA120265EE300FAA315 /* PokerEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerEstimationViewController.swift; sourceTree = "<group>"; };
 		D8872EA320265EE300FAA315 /* FibonacciEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciEstimationViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		D8872EA820265EE300FAA315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8872EAB20265EE300FAA315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8872EAD20265EE300FAA315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8872EB220265EE300FAA315 /* ScrumCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8872EB220265EE300FAA315 /* ScrumCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8872EB620265EE300FAA315 /* ScrumCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumCardsTests.swift; sourceTree = "<group>"; };
 		D8872EB820265EE300FAA315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8872EC52026621B00FAA315 /* TShirtEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TShirtEstimationViewController.swift; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		D8872E9D20265EE300FAA315 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8872E9C20265EE300FAA315 /* ScrumCards.app */,
-				D8872EB220265EE300FAA315 /* ScrumCardsTests.xctest */,
+				D8872E9C20265EE300FAA315 /* ScrumCard.app */,
+				D8872EB220265EE300FAA315 /* ScrumCardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8872E9B20265EE300FAA315 /* ScrumCards */ = {
+		D8872E9B20265EE300FAA315 /* ScrumCard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8872EBB20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCards" */;
+			buildConfigurationList = D8872EBB20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCard" */;
 			buildPhases = (
 				D8872E9820265EE300FAA315 /* Sources */,
 				D8872E9920265EE300FAA315 /* Frameworks */,
@@ -216,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = ScrumCards;
+			name = ScrumCard;
 			productName = ScrumCards;
-			productReference = D8872E9C20265EE300FAA315 /* ScrumCards.app */;
+			productReference = D8872E9C20265EE300FAA315 /* ScrumCard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8872EB120265EE300FAA315 /* ScrumCardsTests */ = {
+		D8872EB120265EE300FAA315 /* ScrumCardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8872EBE20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCardsTests" */;
+			buildConfigurationList = D8872EBE20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCardTests" */;
 			buildPhases = (
 				D8872EAE20265EE300FAA315 /* Sources */,
 				D8872EAF20265EE300FAA315 /* Frameworks */,
@@ -234,9 +234,9 @@
 			dependencies = (
 				D8872EB420265EE300FAA315 /* PBXTargetDependency */,
 			);
-			name = ScrumCardsTests;
+			name = ScrumCardTests;
 			productName = ScrumCardsTests;
-			productReference = D8872EB220265EE300FAA315 /* ScrumCardsTests.xctest */;
+			productReference = D8872EB220265EE300FAA315 /* ScrumCardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 				TargetAttributes = {
 					D8872E9B20265EE300FAA315 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D8872EB120265EE300FAA315 = {
 						CreatedOnToolsVersion = 9.2;
@@ -260,7 +260,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8872E9720265EE300FAA315 /* Build configuration list for PBXProject "ScrumCards" */;
+			buildConfigurationList = D8872E9720265EE300FAA315 /* Build configuration list for PBXProject "ScrumCard" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,8 +273,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8872E9B20265EE300FAA315 /* ScrumCards */,
-				D8872EB120265EE300FAA315 /* ScrumCardsTests */,
+				D8872E9B20265EE300FAA315 /* ScrumCard */,
+				D8872EB120265EE300FAA315 /* ScrumCardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,7 +333,7 @@
 /* Begin PBXTargetDependency section */
 		D8872EB420265EE300FAA315 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8872E9B20265EE300FAA315 /* ScrumCards */;
+			target = D8872E9B20265EE300FAA315 /* ScrumCard */;
 			targetProxy = D8872EB320265EE300FAA315 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -470,14 +470,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X27U5W528L;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 89VPR7M3AL;
 				INFOPLIST_FILE = ScrumCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vimalveerachamy.ScrumCards;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimalveerachamy.agileplanningcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "aeb4155b-f075-44eb-be1f-e980387baf3d";
+				PROVISIONING_PROFILE_SPECIFIER = "AgilePlanningCards Dev Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -487,15 +488,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X27U5W528L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 89VPR7M3AL;
 				INFOPLIST_FILE = ScrumCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vimalveerachamy.ScrumCards;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimalveerachamy.agileplanningcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f5da141d-98b4-4024-b771-4f607b9ef607";
+				PROVISIONING_PROFILE_SPECIFIER = "AgilePlanning AppStore Distribution Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -514,7 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrumCards.app/ScrumCards";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrumCard.app/ScrumCard";
 			};
 			name = Debug;
 		};
@@ -531,14 +533,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrumCards.app/ScrumCards";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrumCard.app/ScrumCard";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8872E9720265EE300FAA315 /* Build configuration list for PBXProject "ScrumCards" */ = {
+		D8872E9720265EE300FAA315 /* Build configuration list for PBXProject "ScrumCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8872EB920265EE300FAA315 /* Debug */,
@@ -547,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8872EBB20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCards" */ = {
+		D8872EBB20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8872EBC20265EE300FAA315 /* Debug */,
@@ -556,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8872EBE20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCardsTests" */ = {
+		D8872EBE20265EE300FAA315 /* Build configuration list for PBXNativeTarget "ScrumCardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8872EBF20265EE300FAA315 /* Debug */,
